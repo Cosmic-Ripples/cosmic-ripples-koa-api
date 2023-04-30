@@ -4,9 +4,6 @@ const albumRouter = require('koa-router')({
 });
 
 // albumRouter.get('/', albumController.getalbums);
-// albumRouter.get('/:ID', albumController.getalbumById);
-// albumRouter.put('/', albumController.updatealbum);
-// albumRouter.post('/', albumController.insertalbum);
-// albumRouter.delete('/:ID', albumController.deletealbumById);
+albumRouter.get('/cover/:ID', albumController.getAlbumCover);
 
 module.exports = albumRouter;

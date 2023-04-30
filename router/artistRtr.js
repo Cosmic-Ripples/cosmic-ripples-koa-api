@@ -4,9 +4,5 @@ const artistRouter = require('koa-router')({
 });
 
 // artistRouter.get('/', artistController.getartists);
-// artistRouter.get('/:ID', artistController.getartistById);
-// artistRouter.put('/', artistController.updateartist);
-// artistRouter.post('/', artistController.insertartist);
-// artistRouter.delete('/:ID', artistController.deleteartistById);
 
 module.exports = artistRouter;
