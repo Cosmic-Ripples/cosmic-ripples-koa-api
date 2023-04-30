@@ -1,3 +1,5 @@
+media_library/
+
 **/node_modules
 **/.DS_Store
 
