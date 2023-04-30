@@ -6,7 +6,6 @@ class metaDataController {
          * Returns a monolithic object representing the entire database for 
          * testing purposes only
          */
-
         return new Promise((resolve, reject) => {
             const query1 = `SELECT * FROM Artist;`;
             const query2 = `SELECT * FROM Album;`;

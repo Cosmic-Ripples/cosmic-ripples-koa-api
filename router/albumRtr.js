@@ -3,7 +3,7 @@ const albumRouter = require('koa-router')({
     prefix: '/album'
 });
 
-// albumRouter.get('/', albumController.getalbums);
+albumRouter.get('/', () => ctx.body = 'Album Router');
 albumRouter.get('/cover/:ID', albumController.getAlbumCover);
 
 module.exports = albumRouter;

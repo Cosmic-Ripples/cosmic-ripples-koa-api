@@ -3,6 +3,7 @@ const trackRouter = require('koa-router')({
     prefix: '/track'
 });
 
-// trackRouter.get('/', trackController.gettracks);
+trackRouter.get('/', () => ctx.body = 'Track Router');
+trackRouter.get('/paths', trackController.getTrackPaths);
 
 module.exports = trackRouter;
