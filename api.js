@@ -42,16 +42,11 @@ api.use(koabodyparser());
 
 require('./CORS.js')(api); /* added CORS headers to all responses */
 
-// api.use(async (ctx, next) => {
-//     await next();
-//     console.log(ctx.body);
-// })
-
 defaultRouter(api);
 
 const server = api.listen(API_PORT, () => {
     console.log(
         `API is listening on port ${server.address().port}: `,
-        `\nhttp://localhost:${8065}/api/v1/`
+        `\nhttp://localhost:${server.address().port}/api/v1/`
     );
 }); // must use http://localhost:8065/api/v1/ or http://[::1]:8065/api/v1/
