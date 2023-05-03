@@ -1,6 +1,6 @@
 const metaDataController = require('../controller/metaDataCtrl');
 
-// const artistRouter = require('./artistRtr');
+const artistRouter = require('./artistRtr');
 const albumRouter = require('./albumRtr');
 const trackRouter = require('./trackRtr');
 
@@ -15,7 +15,7 @@ metaDataRouter.get('/', (ctx) => {
 metaDataRouter.get('/db', metaDataController.getDB);
 
 metaDataRouter.use(
-  //   artistRouter.routes(),
+  artistRouter.routes(),
   albumRouter.routes(),
   trackRouter.routes()
 );

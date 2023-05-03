@@ -3,6 +3,7 @@ const artistRouter = require('koa-router')({
     prefix: '/artist'
 });
 
-// artistRouter.get('/', artistController.getartists);
+artistRouter.get('/', (ctx) => ctx.body = 'Artist Router');
+artistRouter.get('/image/:ID', artistController.getArtistImage);
 
 module.exports = artistRouter;
